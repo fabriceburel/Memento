@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mon Mémento Linux</title>
+  </head>
+  <body>
+  <H1> Les commandes linux </H1>
+
+  <H2> Les commandes de bases</H2>
+  <H3> Ouvrir le manuel d'une commande </H3>
+  <P> <strong> man </strong> </p>
+
+  <H3> Effacer le contenu du terminal </H3>
+  <p> <strong> clear </strong> </p>
+
+
+
+  <H3> Afficher le contenu du dossier courant </H3>
+  <p> <strong> ls </strong> </p>
+
+  <H3> Afficher le contenu du dossier courant avec les fichiers cachés </H3>
+  <p> <strong> ls -a </strong> ou <strong> ls -A </strong> </p>
+
+  <H3> Afficher le contenu du dossier courant version longue sans les fichiers cachés </H3>
+  <p> <strong> ls -l </strong> </p>
+
+  <H3> Afficher le contenu du dossier courant version longue avec les fichiers cachés </H3>
+  <p> <strong> ls -la </strong> </p>
+
+  <H3> Afficher le chemin du dossier courant </H3>
+  <p> <strong> pwd </strong> </p>
+
+  <H3> Se déplacer vers un dossier </H3>
+  <p> <strong> cd </strong> <em> "nom du dossier" </em> </p>
+
+  <H3> se mettre en super utilisateur </H3>
+  <p> <strong> sudo -s </strong> </p>
+  <H4> Pour Rappel : <br /> root@PN-0019:~/Documents/website# (mode root avec le '#') <br />
+fabrice@PN-0019:  ~/Documents/website$ (mode user avec le '$') </H4>
+
+  <H2> Rappel et commande sur les paquets </H1>
+<h4> Pour Rappel : La gestion de pacquet n'est faisable qu'en mode super utilisateur </h4>
+
+
+
+<h3> Mettre à jour la liste des paquets </h3>
+
+<p> <strong> apt update </strong>
+
+
+
+<h3> Mettre à jour les paquets (permet de faire une mise à jour de l'ensemble des logiciel) </h3>
+
+<p> <strong> apt upgrade </strong> </p>
+
+
+<h3> Trouver tous les paquets contenant par exemple le mot XML </h3>
+
+<p> <strong> apt search </strong> XML </p>
+
+<h3> Trouver tous les paquets contenant par exemple le mot apache en précisant la recherche sur le mot css </h3>
+<p> <strong>apt search</strong> <em> apache </em> </strong>| grep </strong> <em> css </em> </p>
+
+
+
+<h3> Installer installer un paquet (par exemple : GIT ) </h3>
+
+<p> <strong>apt install <strong> GIT </p>
+
+
+
+
+<h3>Installer une application Avec le navigateur, télécharger le .deb à l'adresse https://atom.io/ .
+  et  Lancer l'installation du .deb nouvellement téléchargé. </h3>
+
+
+<p> <strong> dpkg -i --force-overwrite </strong> <em> atom-amd64.deb </em> </p>
+
+
+<h4>si ca ne fonctionne pas
+apt --fix-broken install
+apt upgrade
+
+apt update
+
+1 paquet = un ensemble de fonction qui bout à bout permet de créer un logiciel
+apt search apache | grep php (permet de préciser la recherche)
+
+
+
+
+
+
+
+
+  </body>
+</html>
