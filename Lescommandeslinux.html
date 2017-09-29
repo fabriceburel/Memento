@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mon Mémento Linux</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="E2N"><p><img src="logo.jpg" width="120" height="100"  alt="Logo de E2N" title="E2N"/></p></div>
+        <div class="titreprincipal"><h1>Les commandes linux</h1></div>
+        <div class="ubuntu"><img src="index.png" width="100" height="120" alt="logo ubuntu" title="Tux"/></div>
+      </div>
+    </header>
+    <h2>Les commandes de bases</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Les commandes linux</th>
+          <th>Explication de la commande</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>man</strong></td>
+          <td>Ouvrir le manuel d'une commande</td>
+        </tr>
+        <tr>
+          <td><strong>clear</strong></td>
+          <td>Effacer le contenu du terminal</td>
+        </tr>
+        <tr>
+          <td><strong>ls</strong></td>
+          <td>Afficher le contenu du dossier courant</td>
+        </tr>
+        <tr>
+          <td><strong>ls -a</strong> ou <strong>ls -A</strong></td>
+          <td>Afficher le contenu du dossier courant <strong>avec</strong> les fichiers cachés</td>
+        </tr>
+        <tr>
+          <td><strong>ls -l</strong></td>
+          <td>Afficher le contenu du dossier courant version longue <strong>sans</strong> les fichiers cachés</td>
+        </tr>
+        <tr>
+          <td><strong>ls -la</strong></td>
+          <td>Afficher le contenu du dossier courant version longue avec les fichiers cachés</td>
+        </tr>
+        <tr>
+          <td><strong>pwd</strong></td>
+          <td>Afficher le chemin du dossier courant</td>
+        </tr>
+        <tr>
+          <td><strong>cd</strong> <em>"nom du dossier"</em></td>
+          <td>Se déplacer vers un dossier</td>
+        </tr>
+        <tr>
+          <td><strong>sudo -s</strong></td>
+          <td>se mettre en super utilisateur</td>
+        </tr>
+        <tr>
+          <td><strong>mkdir</strong> <em>"nom du fichier"</em></td>
+          <td>permet de créer un fichier</td>
+        </tr>
+        <tr>
+          <td><strong>mv</strong><em>"nom du fichier"</em> <em>"nouveau nom du fichier"</em></td>
+          <td>Permet de renommer un fichier ou un dossier</td>
+        </tr>
+        <tr>
+          <td><strong>mv</strong><em>"nom du fichier"</em><em>"nom du dossier"/"nom du fichier"</em></td>
+          <td>Permet de deplacer un dossier ou un  fichier</td>
+        </tr>
+        <tr>
+          <td><strong>touch</strong><em>"nom du fichier"</em></td>
+          <td>Permet de créer un  fichier</td>
+        </tr>
+        <tr>
+          <td><strong>nano</strong><em>"nom du fichier"</em></td>
+          <td>Permet d ouvrir un  fichier</td>
+        </tr>
+        <tr>
+          <td><em>Firefox<em>"nom du fichier.html"</em></td>
+          <td>permet d'ouvrir un fichier directement avec l'application désiré</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Commande sur les paquets</h2>
+    <h4>Pour Rappel : La gestion de pacquet n'est faisable qu'en mode super utilisateur</h4>
+    <h4>1 paquet = un ensemble de fonction qui bout à bout permet de créer un logiciel</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Les commandes linux</th>
+          <th>Explication de la commande</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>apt update</strong></td>
+          <td>Mettre à jour la liste des paquets</td>
+          <tr>
+            <td><strong>apt upgrade</strong></td>
+            <td>Mettre à jour les paquets (permet de faire une mise à jour de l'ensemble des logiciel)</td>
+          </tr>
+          <tr>
+            <td><strong>apt search</strong> <em>XML</em></td>
+            <td>Trouver tous les paquets contenant par exemple le mot XML</td>
+          </tr>
+          <tr>
+            <td><strong>apt search</strong> <em>apache</em> <strong>| grep</strong> <em>css</em></td>
+            <td>Trouver tous les paquets contenant par exemple le mot apache en précisant la recherche sur le mot css</td>
+          </tr>
+          <tr>
+            <td><strong>apt install</strong> <em>GIT</em></td>
+            <td>Installer installer un paquet (par exemple : GIT )</td>
+          </tr>
+          <tr>
+            <td><strong>dpkg -i --force-overwrite</strong> <em>atom-amd64.deb</em></td>
+            <td>Installer une application Avec le navigateur, télécharger le .deb à l'adresse<a href="https://atom.io/" title="lien vers atom">https://atom/io/</a> et  Lancer l'installation du .deb nouvellement téléchargé.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Si la dernière commande ne fonctionne pas effectuer les commandes suivantes:</h4>
+      <ul>
+        <li><strong>apt --fix-broken install</strong></li>
+        <li><strong>apt upgrade</strong></li>
+        <li><strong>apt update</strong></li>
+      </ul>
+  </body>
+</html>
