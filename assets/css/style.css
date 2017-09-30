@@ -24,7 +24,11 @@ td, th
 .titreprincipal{
 	text-align: center;
 }
-.ubuntu{
+.ubuntu{	
+	float: right;
+	margin-right: 0;
+}
+.github{	
 	float: right;
 	margin-right: 0;
 }
