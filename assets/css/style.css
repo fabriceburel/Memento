@@ -3,18 +3,9 @@ body{
 }
 
 h1{
-  color: black;
   font-size: 60px;
+  text-align: center;
 }
-
-#header{
-  background: #426697;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 body{
   background-color: #E6F4FA;
 }
@@ -24,7 +15,6 @@ h2{
   margin-top:30px;
   margin-bottom: 30px;
 }
-
 table {
   border-collapse:collapse;
   margin-top: 15px;
@@ -32,14 +22,26 @@ table {
 td,th {
   border:1px solid black;
 }
-.Memento{
-float: top;
+header{
+  background:#426697;
+  min-height: 250px;
+  width: 100%;
 }
-.E2N{
+#Titrepage{
+  min-width:50%;
+  float: left;
 }
-.titresecondaire{
+#E2N{
+  min-width: 25%;
+  float: left;
 }
-.github{
-	float: right;
-	margin-right: 0;
+#github{
+  min-width: 25%;
+  text-align: right;
+  float: left;
+}
+#ubuntu{
+  min-width: 25%;
+  text-align: right;
+  float: left;
 }
