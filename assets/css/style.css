@@ -22,32 +22,20 @@ table {
 td,th {
   border:1px solid black;
 }
-.titreprincipal{
-}
-#ubuntu{
-  min-width: 25%;
-  text-align: right;
-  float: left;
-}
-
 table{
 	border-collapse: collapse;
 }
-
 td, th
 {
-
    border: 1px solid black;
  }
-
-.E2N{
-	float: left;
-	margin-left: 0;
-}
-
-.github{
-}
-.github{
-	float: right;
-	margin-right: 0;
-}
+#header{
+   background: #426697;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .titreprincipal{
+   text-align: center;
+ }
