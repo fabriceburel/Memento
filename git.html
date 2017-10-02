@@ -1,45 +1,85 @@
-  <H1> Sauvegarde de fichier avec git et github </H1>
-<H
-
-permet d'initialisé un projet git
-git init
-
-
-$git add nom du fichier 
-permet l'indexation et la validation de dossier ou fichier suivi
-
-
-$git commit -m "nom de la sauvegarde"
-
-$git status 
-permet de regardé l'état des fichiers
-
-$git diff
-indique ce qui a été modifié dans un fichier suivi
-
-$git commit 
-permet de sauvegardé les fichier indexé et modifié
-
-git branch "nom de la nouvelle branche"
-
-git branch -d "nom de la branche que l'on souhaite supprimé"
-
-git checkout "nom de la branche que l'on souhaite être redirigé"
-
-creation d'un alias origin afin de tranférer les donnée sur le lien github
-le lien se récupère directement sur le site après sa création
-git remote add origin https://github.com/fabriceburel/Memento.git
-
-git push origin "nom de la branche que l'on souhaite envoyer sur github"
-
-git pull origin "nom de la branche que l'on souhaite récupérer de github"
-
-git merge "nom de la branche que l'on souhaite fusionné"
-
-
-git fetch origin "récupère les données du projet sauvegardé sur gitHUB
-
-
-$ git clone git://github.com/schacon/grit.git mongrit
-permet de sauvegarder l'ensemble de mon dossier courant dans un nouveau dossier nommer "mongrit"
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mon Mémento git et github</title>
+  </head>
+    <body>
+	<header>
+      <div id="header">
+        <div class="E2N"><p><img src="logo.jpg" width="120" height="100"  alt="Logo de E2N" title="E2N"/></p></div>
+        <div class="titreprincipal"><h1>Les commandes linux</h1></div>
+        <div class="github"><img src="github.jpg" width="100" height="120" alt="logo github" title="le chat de github"/></div>
+      </div>
+    </header>
+	  	<h1> Sauvegarde de fichier avec git et github </h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Nom de la commande</th>
+					<th>Explication de la commande</th>
+				</tr>
+			</thead>
+			<tr>
+				<td><strong>git init</strong></td>
+				<td>Permet d'initialiser un projet git</td>
+			</tr>
+			<tr>
+				<td><strong>git add</strong> <em>nom du fichier</em></td>
+				<td>Permet l'indexation fichier suivi</td>
+			</tr>
+			<tr>
+				<td><strong>git commit -m</strong> <em></em>"nom de la sauvegarde"</em></td>
+				<td>Permet la sauvegarde local des fichiers placé dans l'indexation</td>
+			</tr>
+			<tr>
+				<td><strong>git status</strong></td>
+				<td>Permet de regardé l'état des fichiers</td>
+			</tr>
+			<tr>
+				<td><strong>git diff</strong></td>
+				<td>Indique ce qui a été modifié dans un fichier suivi</td>
+			</tr>
+			<tr>
+				<td><strong>git commit</strong></td>
+				<td>Permet de sauvegardé les fichier indexé et modifié</td>
+			</tr>
+			<tr>
+				<td><strong>git branch</strong> <em>"nom de la nouvelle branche"</em></td>
+				<td>Permet de créer une nouvelle branche</td>
+			</tr>
+			<tr>
+				<td><strong>git branch -d</strong> <em>"nom de la branche que l'on souhaite supprimé"</em></td>
+				<td>Permet de supprimer une branche</td>
+			</tr>
+			<tr>
+				<td><strong>git checkout</strong> <em>"nom de la branche que l'on souhaite être redirigé"</em></td>
+				<td>Creation d'un alias origin afin de tranférer les donnée sur le lien github<br />
+				le lien se récupère directement sur le site après sa création: <br />
+				git remote add origin https://github.com/fabriceburel/Memento.git</td>
+			</tr>
+			<tr>
+				<td><strong>git push origin</strong> <em>"nom de la branche que l'on souhaite envoyer sur github"</em></td>
+				<td>Permet de pousser la branche sur un depot distant tel que github</td>
+			</tr>
+			<tr>
+				<td><strong>git pull origin</strong> <em>"nom de la branche que l'on souhaite récupérer de github"</em></td>
+				<td>Récupère et fusionne automatiquement une branche distante situé dans un dépot distant tel que github dans la branche locale</td>
+			</tr>
+			<tr>
+				<td><strong>git merge</strong> <em>"nom de la branche que l'on souhaite fusionné"</em></td>
+				<td>Permet de fusionné une branche secondaire à la branche master</td>
+			</tr>
+			<tr>
+				<td><strong>git fetch origin</strong><em> "récupère les données du projet sauvegardé sur gitHUB</em></td>
+				<td>Permet de récupérer la branche que l'on souhaite à partir d'un depot distant tel que github</td>
+			</tr>
+			<tr>
+				<td><strong>git clone git:</strong><em> emplacement du nouveau dossier de sauvegarde</em></td>
+				<td>Permet de sauvegarder l'ensemble de mon dossier courant dans un nouveau dossier nommer "mongrit"</td>
+			</tr>
+		</table>
+		<p><a href="https://git-scm.com/book/fr/v1/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants" title="aide sur github" index="aide sur github"/> Lien vers tuto github </p>
+	</body>
+</html>

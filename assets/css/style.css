@@ -1,8 +1,45 @@
+body{
+  font-family: Comic;
+}
+
 h1{
-  color: Red;
+  color: black;
+  font-size: 60px;
+}
+
+#header{
+  background: #426697;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body{
+  background-color: #E6F4FA;
+}
+h2{
+  text-align: center;
+  font-size:40px;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
 
-  background-color: silver;
+table {
+  border-collapse:collapse;
+  margin-top: 15px;
+}
+td,th {
+  border:1px solid black;
+}
+.Memento{
+float: top;
+}
+.E2N{
+}
+.titresecondaire{
+}
+.github{
+	float: right;
+	margin-right: 0;
 }
