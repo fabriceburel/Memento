@@ -45,3 +45,29 @@ header{
   text-align: right;
   float: left;
 }
+
+table{
+	border-collapse: collapse;
+}
+
+td, th
+{
+
+   border: 1px solid black;
+ }
+
+.E2N{
+	float: left;
+	margin-left: 0;
+}
+.titreprincipal{
+	text-align: center;
+}
+.ubuntu{	
+	float: right;
+	margin-right: 0;
+}
+.github{	
+	float: right;
+	margin-right: 0;
+}
