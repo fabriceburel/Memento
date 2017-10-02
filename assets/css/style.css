@@ -22,23 +22,7 @@ table {
 td,th {
   border:1px solid black;
 }
-header{
-  background:#426697;
-  min-height: 250px;
-  width: 100%;
-}
-#Titrepage{
-  min-width:50%;
-  float: left;
-}
-#E2N{
-  min-width: 25%;
-  float: left;
-}
-#github{
-  min-width: 25%;
-  text-align: right;
-  float: left;
+.titreprincipal{
 }
 #ubuntu{
   min-width: 25%;
@@ -60,14 +44,10 @@ td, th
 	float: left;
 	margin-left: 0;
 }
-.titreprincipal{
-	text-align: center;
+
+.github{
 }
-.ubuntu{	
-	float: right;
-	margin-right: 0;
-}
-.github{	
+.github{
 	float: right;
 	margin-right: 0;
 }
