@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/prism.css" rel="stylesheet"/>
+    <title>Mon Mémento VHOST</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="E2N"><h3><img src="logo.jpg" width="190" height="150"  alt="Logo de E2N" title="E2N"/></h3></div>
+        <div class="titreprincipal">
+          <h1>MEMENTO</h1>
+          <h1>Creation de VHOST</h1></div>
+        <div id="github"><img src="github.jpg" width="200" height="150" alt="logo github" title="le chat de github"/></div>
+      </div>
+      <div class="onglet"><p><a href="Lescommandeslinux.html" title="lien vers linux" index="redirection vers la page du memento linux"> Memento Les commandes linux</a></p></div>
+      <div class="onglet"><p><a href="git.html" title="lien vers git" index="redirection vers la page du memento github"> Memento Git et Github</a></p></div>
+      <div class="onglet"><p><a href="VHOST.html" title="lien vers vhost" index="redirection vers la page du memento creation de vhost"> Memento creation de vhost</a></p></div>
+      <div class="onglet"><p><a href="commandephp.html" title="lien vers commande php" index="redirection vers la page du memento commande php"> Memento commande PHP</a></p></div>
+    </header>
+    <h2> Création de vhost via le terminal ubuntu</h2>
+    <h3>Ensuite on va se rendre dans le dossier des Vhost d'Apache :</h3>
+    <pre><code class="language-markup">cd /etc/apache2/sites-available/ </code></pre>
+    <h3>Nous allons maintenant créer un nouveau fichier de configuration avec l'éditeur Nano :</h3>
+    <pre><code class="language-markup"><xmp>nano monProjet.conf</xmp></code></pre>
+    <h3>Dans Nano coller ce code :</h3>
+      <pre><code class="language-markup"><xmp><VirtualHost *:80>
+        ServerAdmin webmaster@monProjet
+        ServerName www.monProjet
+        ServerAlias monProjet
+        DocumentRoot /home/nom_utilisateur/www/monProjet
+        <Directory /home/nom_utilisateur/www/monProjet/>
+          AllowOverride All
+          Require all granted
+        </Directory>
+        ErrorLog /var/log/apache2/monProjet-error.log
+        LogLevel warn
+        CustomLog  /var/log/apache2/monProjet-access.log combined
+        ServerSignature Off
+    </VirtualHost></xmp></code></pre>
+    <h4>Important : Pensez bien à modifier <em>nom_utilisateur</em> par votre nom d'utilisateur. Cette configuration est minimal. Elle n'est pas à reproduire en production.Sauvegardez puis activez ce nouveau Vhost : </h4>
+    <pre><code class="language-markup"><xmp>a2ensite monProjet.conf </xmp></code></pre>
+    <h3>Relancez la configuration d'Apache :</h3>
+    <pre><code class="language-markup"><xmp>service apache2 reload</xmp></code></pre>
+    <h3>Configuration du fichier hosts : </h3>
+    <h3>Le Vhost étant créé, il faut maintenant dire à notre ordinateur que <em>http://monProjet"</em> dirige vers notre machine et pas sur le web. Pour ce faire il faut éditer le fichier hosts. </h3>
+    <pre><code class="language-markup"><xmp>cd /etc
+    nano hosts </xmp></code></pre>
+    <h3>Après la ligne qui commence par 127.0.1.1 ajoutez :</h3>
+    <pre><code class="language-markup"><xmp>127.0.0.1 monProjet</xmp> </code></pre>
+    <h3>A partir de là vous pouvez afficher la page dans Firefox avec l'adresse : <em>http://monProjet</em></h3>
+    <script src="assets/js/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/prism.css" rel="stylesheet"/>
+    <title>Mon Mémento commande php</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="E2N"><p><img src="logo.jpg" width="190" height="150"  alt="Logo de E2N" title="E2N"/></p></div>
+        <div class="titrepirncipal">
+          <h1>MEMENTO</h1>
+          <h1>Les commandes PHP</h1></div>
+        <div class="ubuntu"><img src="index.png" width="150" height="200" alt="logo ubuntu" title="Tux"/></div>
+      </div>
+      <div class="onglet"><p><a href="Lescommandeslinux.html" title="lien vers linux" index="redirection vers la page du memento linux"> Memento Les commandes linux</a></p></div>
+      <div class="onglet"><p><a href="git.html" title="lien vers git" index="redirection vers la page du memento github"> Memento Git et Github</a></p></div>
+      <div class="onglet"><p><a href="VHOST.html" title="lien vers vhost" index="redirection vers la page du memento creation de vhost"> Memento creation de vhost</a></p></div>
+      <div class="onglet"><p><a href="commandephp.html" title="lien vers commande php" index="redirection vers la page du memento commande php"> Memento commande PHP</a></p></div>
+    </header>
+    <section>
+    <h2>Les bases</h2>
+    <h3> un fichier ou une section de code php se défini ainsi:</h3>
+    <pre><code class="language-php"><xmp><?php
+
+    ?></xmp></code></pre>
+    <h3>pour créer une variable il suffit de l'écrire une première fois dans une boucle une fonction par exemple </h3>
+    <pre><code class="language-php"><xmp><?php
+      $variable1=26;
+      $varible = 'je met ce que je veux dans une variable';
+    ?></xmp></code></pre>
+    <h3>Les boucles for et while </h3>
+    <p> Boucle for :</p>
+    <pre><code class="language-php"><xmp><?php
+        for($var1;condition;incrementation) {
+          {
+            action;
+          }
+        ?></xmp></code></pre>
+      <p> Boucle while :</p>
+      <pre><code class="language-php"><xmp><?php
+        $var1;
+        while (condition) {
+          action;
+          incrementation;
+        }
+    ?></xmp></code></pre>
+    <p class="variable">$var1=initialisation de la variable</p>
+    <p class="condition">condition=condition qui arretera la boucle</p>
+    <p class="incrementation">incrementation=action qui doit être réalisé à chaque boucle</p>
+    <p class="action">action=action désiré lorsque la condition qui arretera la boucle n est pas vrai </p>
+    <script src="assets/js/prism.js"></script>
+  </section>
+  </body>
+</html>
